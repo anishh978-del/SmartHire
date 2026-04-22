@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>SmartHire</h2>
+    <ul>
+      <li onclick="goCompanyDashboard()">🏠 Dashboard</li>
+      <li onclick="goCompanySwipe()">🔥 Find Candidates</li>
+      <li onclick="goPostJob()">➕ Post Job</li>
+      <li onclick="goAnalytics()">📊 Analytics</li>
+    </ul>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-content">
+
+    <div class="topbar">
+      <h2>Welcome Recruiter 👋</h2>
+      <div>🔔 👤</div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="stat-box">
+        <h2><span class="counter" data-target="120">0</span></h2>
+        <p>Candidates Viewed</p>
+      </div>
+
+      <div class="stat-box">
+        <h2><span class="counter" data-target="45">0</span></h2>
+        <p>Shortlisted</p>
+      </div>
+
+      <div class="stat-box">
+        <h2><span class="counter" data-target="20">0</span></h2>
+        <p>Interview Requests</p>
+      </div>
+
+    </div>
+
+    <!-- GRAPH -->
+    <div class="graph-section">
+      <h3>Hiring Activity 📊</h3>
+      <canvas id="companyChart"></canvas>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

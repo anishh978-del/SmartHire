@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmartHire - Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+  <h1>Find Candidates 🔥</h1>
+
+  <!-- CARD STACK -->
+  <div class="card-stack">
+
+    <!-- BACK CARD -->
+    <div class="card back-card" id="backCard">
+      <img src="anish.jpg" alt="candidate">
+      <h2 id="backName"></h2>
+    </div>
+
+    <!-- FRONT CARD -->
+    <div class="card front-card" id="swipeCard">
+      <img src="anish.jpg" alt="candidate">
+
+      <h2 id="candidateName"></h2>
+
+      <p id="matchC"></p>
+      <p id="reasonC"></p>
+
+      <p class="statusC"></p>
+
+      <button onclick="downloadResume(currentCandidate.name, currentCandidate.skills)">
+        📄 View Resume
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ACTION BUTTONS -->
+ <div class="action-bar">
+  <button class="reject-btn" onclick="reject()">❌ Reject</button>
+  <button class="accept-btn" onclick="sendRequest()">❤️ Accept</button>
+</div>
+
+</div>
+
+<!-- RESUME POPUP -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeResume()">&times;</span>
+
+    <h2 id="resumeName"></h2>
+    <p><strong>Skills:</strong> <span id="resumeSkills"></span></p>
+    <p><strong>Experience:</strong> Fresher</p>
+    <p><strong>Projects:</strong> SmartHire Platform</p>
+
+    <button onclick="closeResume()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
