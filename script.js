@@ -1,9 +1,9 @@
 /* ================= STUDENT SWIPE ================= */
 
 let jobs = [
-  { title: "Frontend Developer", match: 85, reason: "React, JavaScript", image: "IBM.png" },
-  { title: "Backend Developer", match: 70, reason: "Node.js, API", image: "rare.png" },
-  { title: "UI/UX Designer", match: 60, reason: "Figma, Design", image: "micro.png" }
+  { title: "Frontend Developer", match: 85, reason: "React, JavaScript", image: "photos/IBM.png" },
+  { title: "Backend Developer", match: 70, reason: "Node.js, API", image: "photos/rare.png" },
+  { title: "UI/UX Designer", match: 60, reason: "Figma, Design", image: "photos/micro.png" }
 ];
 
 let jobIndex = 0;
@@ -46,13 +46,14 @@ if (window.location.href.includes("student.html")) {
 /* ================= COMPANY SWIPE + CARD STACK ================= */
 
 let candidates = [
-  { name: "Anish", match: 85, skills: "React, JavaScript", image: "anish.jpeg" },
-  { name: "Vasudev", match: 78, skills: "React, HTML", image: "vasudev.jpeg" },
-  { name: "Ranver", match: 72, skills: "Node.js, Backend", image: "Ranver.jpeg" },
- 
-  { name: "Loki", match: 90, skills: "React, JS, CSS", image: "loki.jpeg" },
-  { name: "Ksitis", match: 65, skills: "Java, OOP", image: "ksitis.jpeg" },
-  { name: "Aditya", match: 80, skills: "JavaScript, API", image: "Adi.jpeg" }
+  { name: "Anish", match: 85, skills: "React, JavaScript", image: "photos/anish.jpeg" },
+  { name: "Vasudev", match: 78, skills: "React, HTML", image: "photos/vasudev.jpeg" },
+  { name: "Ranver", match: 72, skills: "Node.js, Backend", image: "photos/Ranver.jpeg" },
+ { name: "NUKE", match: 72, skills: "Node.js, Backend", image: "photos/nuke.png" },
+{ name: "Nihal", match: 72, skills: "Node.js, Backend", image: "photos/Nhi.jpeg" },
+  { name: "Loki", match: 90, skills: "React, JS, CSS", image: "photos/loki.jpeg" },
+  { name: "Ksitis", match: 65, skills: "Java, OOP", image: "photos/ksitis.jpeg" },
+  { name: "Aditya", match: 80, skills: "JavaScript, API", image: "photos/Adi.jpeg" }
 ];
 
 let cIndex = 0;
